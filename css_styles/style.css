@@ -1,0 +1,278 @@
+.menu-container{
+background-color: #7ab649;
+position: relative;
+}
+
+/* makes a class select and adds a background color and position relative */
+
+.menu{
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 10px;
+flex-wrap:wrap;
+color: #fff;
+}
+
+/* makes a class that adds flexbox functionality, aligns it too the center sets the color and pads */
+
+.menu > ul{
+list-style-type:none;
+display: flex;
+}
+
+/* makes the child ul under menu display:flex */
+
+.menu > ul > li{
+flex:1;
+list-style-type: none;
+padding: 10px;
+background-color: ##62F566;
+position: relative;
+}
+
+/*Makes a class with children > ul > li and adds makes it to the item receives the free space in the flex container */
+
+
+.menu > ul > li > ul{
+position: absolute;
+top: 100%;
+left: 0;
+display: none;
+background-color: rgba(0,0,0,0):
+z-index: 2;
+}
+
+/*Makes a class with children >ul > li > ul and positions and formats it*/
+
+.menu > ul > li:hover > ul{
+display:block;
+color:#FF3CEA;
+}
+
+/*Makes a class with children ul > li >ul but makes it for ul to display the list has to be hovered over */
+
+.menu > ul > li > a{
+text-decoration:none;
+display: block;
+}
+
+/*Makes a class with children ul > li > a display:block puts it on a new line */
+
+.menu > ul > li > ul > li > a{
+color: #fff;
+text-decoration: none;
+padding: 5px;
+display: block;
+}
+
+/*Makes a class with children ul > li > ul > li > a so targetting the sublist and formats it */
+
+.menu > ul > li > ul > li:hover > a{
+color:#FF3CEA
+}
+
+/*Makes it so you have to hover over the list for the link to display*/
+
+.hero{
+display:flex;
+justify-content: center;
+align-items: flex-start;
+background-image: url("/images/hero5.jpg");
+background-size: cover;
+background-position: center;
+min-height:70vh;
+}
+/* Makes a class called hero and gives it the flexbox display, distributes the content around the center, aligns the
+items to teh start of the flex box, adds a background image, size*/
+
+.content-container{
+display:flex;
+justify-content:center;
+margin:50px
+min-height:40vh
+}
+/*Within the content container it is displaying the flexible length, the content is getting shifted to the center with margin on the outside of boarder being increased, viewport height is set*/
+.calculator-wrapper{
+display:flex;
+flex-direction:column;
+border:2px solid#6c8c99;
+flex:1;
+background-color:#cddff1;
+padding:20px;
+}
+/*Within calculator wrapper you are displaying the flexible length and the flex direction is going vertical, using a blue background*/
+
+.calculator-wrapper h1{
+    text-align:center;}
+
+
+
+
+.calculator-wrapper label{
+    display:block;
+    margin-bottom:10px;}
+/* Adding a label and display block and increasing margin-bottom (outside boarder) by 10px*/
+.calculator-wrapper button{
+    background-color:#4caf50;
+    color:white;
+    padding:10px;
+    border:none;
+    cursor:pointer;}
+/*Within the calculator wrapper button this is adding a background color and padding(inside boarder) with size. The cursor is setting the mouse point*/
+
+.calculator-wrapper button:hover{
+    background-color:#45a049;}
+/*Within the calculator wrapper you hover over the button and it has set the background color*/
+
+.calculator-wrapper#result{
+    margin-top:20px;
+    font-weight:bold;}
+/*Within the calculator wrapper this is increasing the margin(outside boarder) top size and setting the font weight to bold*/
+.content{
+flex:1;
+   margin-right:20px;
+    text-align:left;}
+/*Within the content it is setting the flexible length at 1 and increasing the margin on the right, with also aligning the text*/
+
+.calculator-wrapper{
+   flex-direction:column
+    margin-left:0
+    margin-right:0  }
+/*Within the calculator wrapper it is stacking items vertically in the flex direction and also reset the left and right margin*/
+@media screen and (max-width:736px) {
+.calculator-wrapper{
+}   flex-direction:column;
+    margin-left:0;
+    margin-right:0;
+}
+
+.datetime{
+    font-size:16px;
+    padding:24px;
+    color:#ffffff;
+    background:#444444;
+    box-shadow:0 0 10px rgba(0, 0 ,0, 0.25);
+    border-radius:4px;
+    border-right:10px #009578 solid;
+    width:400px;
+    font-family:sans-serif;
+}
+
+.time{
+    font-size:3em;
+    color:#009578;
+}
+
+.date{
+    margin-top:12px;
+    font-size:1.27em;
+}
+
+.container_booking{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    padding:20px;
+    border-radius:5px;
+    box-shadow:0 0 10px rgba(0, 0, 0, 0.1);
+    width:100%;
+    max-width:400px;
+    margin:10px;
+}
+
+.container_booking label {
+    font-weight:bold;
+    margin-bottom:10px;
+}
+
+.container_booking select,
+.container_booking button{
+    padding:8px;
+    border:1px solid #ccc;
+    border-radius:4px;
+    margin-bottom:10px;
+}
+
+.container_booking button{
+    background-color:#007BFF
+    color:#fff;
+    cursor:pointer;
+    display:block;
+}
+.image-container{
+    display:flex;
+    justify-content:space-around;
+    margin:10px;
+}
+
+.flex-item{
+    position:relative;
+    width:30%;
+    height:auto;
+    margin:0 10px; /*Adjusted margin*/
+}
+
+.title-wrapper{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    padding:20px;
+    width:100%;
+}
+
+.image{
+    width:100%;
+    height:auto;
+    display:block;
+    opacity:0.6;/*Adjust the opacity value (0 to 1) as needed*/
+}
+
+.overlay-text{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%);
+    color:rgba(34, 34, 34, 1);/*Use RGBA to set color with full opacity*/
+    font-size:30px;
+    font-weight:bold;
+    text-align:center;
+    z-index:1;/*Ensure text appears over image*/
+    text-shadow:2px 2px 4px rgba(0, 0, 0, 0.5);/*Drop shadow with 2px horizontal offset, 2px vertical offset, 4px blur, and 0.5 alpha*/
+}
+
+
+.menu
+body{
+    font-family: 'Arial', sans-serif;
+    background-color:#f4f4f4;
+    margin:0;}
+
+
+.form-login{
+display: fixed;
+position: absolute;
+color: black;
+left: 45%;
+top: 250px;
+text-align: center;
+}
+
+.form-login input[type="submit"]{
+background-color: #7ab649;
+color: white;
+border: none;
+padding: 10px 20px;
+font-size: 16px;
+border-radius: 5px;
+cursor: pointer;
+margin-top: 19px;
+}
+
+
+
+
+

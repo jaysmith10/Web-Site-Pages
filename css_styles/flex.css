@@ -1,0 +1,35 @@
+.flex-container{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    padding:20px;
+    boarder-radius:5px;
+    box-shadow:0 0 10px rgba(0,0,0,0.1);
+    width:80%;
+    max-width:400px;
+}
+
+.flex-container label{
+    display:block;
+    margin-bottom:8px;
+}
+
+.flex-container input,
+.flex-container select {
+    padding:8px;
+    margin-bottom:16px;
+}
+
+.flex-container button{
+    background-color:#4caf50;
+    color:white;
+    padding:10px;
+    boarder:none;
+    boarder-radius:5px;
+    cursor:pointer;
+}
+
+.form-wrapper button:hover{
+    background-color:#45a049;
+}
