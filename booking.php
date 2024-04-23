@@ -8,7 +8,7 @@ include 'retrieval.php'; // This will execute the PHP code for retrieving class 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="../css_styles/booking.css" />
+    <link rel="stylesheet" type="text/css" href="../css_styles/style.css" />
   <title>Gym Booking</title>
 </head>
 <body>
